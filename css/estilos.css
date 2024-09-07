@@ -40,8 +40,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
 }
-
-
+ 
 /* Nav */
 
 .nav {
@@ -73,7 +72,10 @@ body {
     padding:10px 20px;
    }
 .nav__links:hover {
-    background-color: #00000028;
+    background-color: #00000063;
+    border-radius: 10px;
+    transition: 350ms;
+
     }
     
 .nav__menu {
@@ -86,12 +88,20 @@ body {
     display: block;
     width: 30px;
 }
-
+.nav__img:hover{
+    width: 35px;
+    height: 35px;
+    transition: 350ms;
+}
 
 .nav__close {
     display: var(--show, none);
 }
-
+.nav__close:hover{
+    height: 33px;
+    width: 33px;
+    transition: 350ms;
+}
 
 /* Hero container */
 
@@ -122,6 +132,11 @@ body {
     text-decoration: none;
     padding: 13px 30px;
     border-radius: 32px;
+}
+.cta:hover{
+    background-color: #2074c2;
+    transition: 350ms;
+
 }
 
 /* About */
@@ -267,7 +282,11 @@ body {
     color: var(--color-cta);
     box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
+.price__cta:hover {
+    background-color: #00000028;
+    transition: 350ms;
 
+    }
 /* Testimony */
 
 .testimony{
@@ -323,7 +342,11 @@ body {
     width: 90%;
     cursor: pointer;
 }
-
+.testimony__arrow:hover{
+    width: 50px;
+    height: 50px;
+    transition: 350ms;
+}
 /* Questions */
 
 .questions{
@@ -375,7 +398,10 @@ body {
     margin-left: 10px;
     transition:  transform .3s;
 }
-
+.questions__arrow:hover{
+    background-color:#0d4b85 ;
+  transition: 350ms;
+}
 .questions__arrow--rotate{
     transform: rotate(180deg);
 }
@@ -484,7 +510,11 @@ body {
 .footer__img{
     width: 30px;
 }
-
+.footer__img:hover{
+     width: 33px;
+     height: 33px;
+     transition: 350ms;
+ }
 /* Media queries */
 
 @media (max-width:800px){
@@ -494,7 +524,7 @@ body {
 
     .nav__link--menu{
         position: fixed;
-        background-color: #000;
+        background-color: #000000e0;
         top: 0;
         left: 0;
         height: 100%;
@@ -507,7 +537,14 @@ body {
         opacity: 0;
         pointer-events: none;
         transition: .7s opacity;
+        font-size: large;
     }
+    .nav__links:hover {
+        background-color: #47474763;
+        border-radius: 10px;
+        transition: 350ms;
+    
+        }
 
     .nav__link--show{
         --show: block;
@@ -594,7 +631,11 @@ body {
     .footer__input{
         flex: 1;
     }
-
+    .testimony__arrow:hover{
+        width: 32px;
+        height: 32px;
+        transition: 350ms;
+    }
 }
 
 @media (max-width:600px){
@@ -605,7 +646,11 @@ body {
     .hero__paragraph{
         font-size: 1rem;
     }
-
+    .testimony__arrow:hover{
+        width: 32px;
+        height: 32px;
+        transition: 350ms;
+    }
     .subtitle{
         font-size: 1.8rem;
     }
